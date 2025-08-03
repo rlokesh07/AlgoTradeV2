@@ -1,0 +1,3 @@
+/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles/my_project.dir
+/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles/edit_cache.dir
+/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles/rebuild_cache.dir
