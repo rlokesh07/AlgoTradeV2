@@ -153,6 +153,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/strat.o: src/strat.cpp.o
+.PHONY : src/strat.o
+
+# target to build an object file
+src/strat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/strat.cpp.o
+.PHONY : src/strat.cpp.o
+
+src/strat.i: src/strat.cpp.i
+.PHONY : src/strat.i
+
+# target to preprocess a source file
+src/strat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/strat.cpp.i
+.PHONY : src/strat.cpp.i
+
+src/strat.s: src/strat.cpp.s
+.PHONY : src/strat.s
+
+# target to generate assembly for a file
+src/strat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/strat.cpp.s
+.PHONY : src/strat.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -165,6 +189,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/strat.o"
+	@echo "... src/strat.i"
+	@echo "... src/strat.s"
 .PHONY : help
 
 

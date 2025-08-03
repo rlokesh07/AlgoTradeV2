@@ -1,8 +1,11 @@
 #include <iostream>
+#include "../include/AlgoTradeV2/strat.hpp"
 
 
-using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0; }
+    strat test("aapl", 145.0);
+
+    test.test();
+}
+
