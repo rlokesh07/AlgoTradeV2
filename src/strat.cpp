@@ -4,7 +4,7 @@
 #include <string>
 
 void strat::test() {
-    std::cout << "penis";
+    std::cout << "penidfs";
 }
 
 void strat::setCostBasis(double newCostBasis){

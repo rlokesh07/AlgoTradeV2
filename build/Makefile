@@ -129,6 +129,30 @@ my_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
 .PHONY : my_project/fast
 
+src/fxData.o: src/fxData.cpp.o
+.PHONY : src/fxData.o
+
+# target to build an object file
+src/fxData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/fxData.cpp.o
+.PHONY : src/fxData.cpp.o
+
+src/fxData.i: src/fxData.cpp.i
+.PHONY : src/fxData.i
+
+# target to preprocess a source file
+src/fxData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/fxData.cpp.i
+.PHONY : src/fxData.cpp.i
+
+src/fxData.s: src/fxData.cpp.s
+.PHONY : src/fxData.s
+
+# target to generate assembly for a file
+src/fxData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/fxData.cpp.s
+.PHONY : src/fxData.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -152,6 +176,30 @@ src/main.s: src/main.cpp.s
 src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/marketData.o: src/marketData.cpp.o
+.PHONY : src/marketData.o
+
+# target to build an object file
+src/marketData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/marketData.cpp.o
+.PHONY : src/marketData.cpp.o
+
+src/marketData.i: src/marketData.cpp.i
+.PHONY : src/marketData.i
+
+# target to preprocess a source file
+src/marketData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/marketData.cpp.i
+.PHONY : src/marketData.cpp.i
+
+src/marketData.s: src/marketData.cpp.s
+.PHONY : src/marketData.s
+
+# target to generate assembly for a file
+src/marketData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/marketData.cpp.s
+.PHONY : src/marketData.cpp.s
 
 src/strat.o: src/strat.cpp.o
 .PHONY : src/strat.o
@@ -186,9 +234,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_project"
+	@echo "... src/fxData.o"
+	@echo "... src/fxData.i"
+	@echo "... src/fxData.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/marketData.o"
+	@echo "... src/marketData.i"
+	@echo "... src/marketData.s"
 	@echo "... src/strat.o"
 	@echo "... src/strat.i"
 	@echo "... src/strat.s"
