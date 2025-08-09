@@ -10,7 +10,7 @@ int main() {
     EURUSD.getPrice();
     EURUSD.startData();
     EURUSD.makeVerbose();
-    
+    //test    
 
     
     std::chrono::milliseconds interval1(100000);
