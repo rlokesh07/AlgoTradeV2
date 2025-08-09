@@ -30,11 +30,8 @@ DataPoint fxData::getPrice(){
             // Make GET request
             auto res = cli.Get(query.str(), headers);
 
-            std::cout << res->status << std::endl;
 
             json data = json::parse(res->body);
-
-            std::cout << data.dump(4) << std::endl;
             dp.time = currentTime();
             dp.ask = std::stod(data["prices"][0]["closeoutAsk"].get<std::string>());
             dp.bid = std::stod(data["prices"][0]["closeoutBid"].get<std::string>());

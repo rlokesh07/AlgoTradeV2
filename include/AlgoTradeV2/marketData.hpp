@@ -4,7 +4,7 @@
 #include <deque>
 #include <iostream>
 #include <thread>
-
+#include <mutex>
 
 struct DataPoint {
     double bid;
@@ -23,9 +23,10 @@ class marketData {
 
         virtual DataPoint getPrice() = 0;
         std::string getTicker() {return ticker;}
-
-        const DataPoint* begin();
-        const DataPoint* end();
+    
+        std::deque<DataPoint>::iterator begin();
+        std::deque<DataPoint>::iterator end();
+        int size();
         
         void startData();
         void stopData();
@@ -34,6 +35,7 @@ class marketData {
 
         std::deque<DataPoint> dataBuffer;
         std::thread dataThread;
+        std::mutex dataBufferLock;
 
     private:
         std::string ticker;

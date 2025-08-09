@@ -1,16 +1,16 @@
-#include <set>
-#include <vector>
 #include <string>
+#include "marketData.hpp"
 
 class strat{
     public:
-        strat(std::string ticker, double costBasis) : ticker{ticker}, costBasis{costBasis} {setPosition(-1);}; 
+        strat(std::string ticker, double costBasis, marketData& data) : ticker{ticker}, costBasis{costBasis}, data{data} {setPosition(-1);}; 
         void setCostBasis(double newCostBasis);
         void setPosition(int position);
-        int getPosition();
+        virtual int getPosition() = 0;
         double getCostBasis();
         void test();
-    
+        marketData& data;
+
     private:
         std::string ticker;
         double costBasis;

@@ -11,6 +11,9 @@ void marketData::startData(){
 
 void marketData::stopData(){
     running = false;
+    if(dataThread.joinable()){
+        dataThread.join();
+    }
 }
 
 void marketData::updateDataBuffer(){
@@ -18,10 +21,18 @@ void marketData::updateDataBuffer(){
         std::cout << "running" << std::endl;
         try {
             DataPoint dp = getPrice();
+
+
             if (verbose) {
                 std::cout << dp << std::endl;
             }
+
+
+            marketData::dataBufferLock.lock();
             dataBuffer.push_back(dp);
+            marketData::dataBufferLock.unlock();
+
+
         }
         catch (const std::exception& e) {
             std::cerr << "[updateDataBuffer] Exception: " << e.what() << std::endl;
@@ -32,5 +43,15 @@ void marketData::updateDataBuffer(){
         std::this_thread::sleep_for(interval);
     }
 }
+std::deque<DataPoint>::iterator marketData::begin(){ 
+    return marketData::dataBuffer.begin();
+}
 
 
+std::deque<DataPoint>::iterator marketData::end(){ 
+    return marketData::dataBuffer.end();
+}
+
+int marketData::size() {
+    return marketData::dataBuffer.size();
+}
