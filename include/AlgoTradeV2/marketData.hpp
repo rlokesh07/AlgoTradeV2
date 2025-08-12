@@ -1,10 +1,13 @@
 #include <chrono>
+#include <iomanip>
+#include <istream>
 #include <string>
 #include <ctime>
 #include <deque>
 #include <iostream>
 #include <thread>
 #include <mutex>
+
 
 struct DataPoint {
     double bid;
@@ -13,8 +16,7 @@ struct DataPoint {
     
 };
 
-
-
+    
 class marketData { 
 
     public:
@@ -45,7 +47,38 @@ class marketData {
         bool running = false;
 };
 
-inline std::ostream& operator<<(std::ostream& os, const DataPoint& p) {
-    os << "DataPoint{time: " << ", bid: " << p.bid << ", ask:" << p.ask << "}";
+inline std::ostream& operator<<(std::ostream& os, const DataPoint& dp) {
+    //convert system time to local time
+    std::time_t time_t_val = std::chrono::system_clock::to_time_t(dp.time);
+    std::tm* tm_val = std::localtime(&time_t_val);
+
+
+    os << "DataPoint{time: " << std::put_time(tm_val, "%Y-%m-%d %H:%M:%S") << ", bid: " << dp.bid << ", ask:" << dp.ask << "}";
     return os;
+}
+
+inline std::istream& operator>>(std::istream& is, DataPoint& dp) {
+
+    std::string discard;
+    char comma1, comma2, brace;
+    std::tm tm = {};
+    double bid, ask;
+    
+
+    is >> discard >> discard; //remove "DataPoint{time:"
+    
+    is >> std::get_time(&tm, "%Y-%m-%d %H:%M:%S"); //get time
+
+    is >> comma1 >> discard >> bid >> comma2 >> discard >> ask; //get bid and ask
+    
+
+    std::time_t time_t_val = std::mktime(&tm); //convert the time back to system time
+
+
+    dp.time = std::chrono::system_clock::from_time_t(time_t_val);
+
+    dp.bid = bid;
+    dp.ask = ask;
+
+    return is;
 }
