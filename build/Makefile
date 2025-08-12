@@ -201,6 +201,30 @@ src/marketData.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/marketData.cpp.s
 .PHONY : src/marketData.cpp.s
 
+src/momStrat.o: src/momStrat.cpp.o
+.PHONY : src/momStrat.o
+
+# target to build an object file
+src/momStrat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/momStrat.cpp.o
+.PHONY : src/momStrat.cpp.o
+
+src/momStrat.i: src/momStrat.cpp.i
+.PHONY : src/momStrat.i
+
+# target to preprocess a source file
+src/momStrat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/momStrat.cpp.i
+.PHONY : src/momStrat.cpp.i
+
+src/momStrat.s: src/momStrat.cpp.s
+.PHONY : src/momStrat.s
+
+# target to generate assembly for a file
+src/momStrat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/momStrat.cpp.s
+.PHONY : src/momStrat.cpp.s
+
 src/strat.o: src/strat.cpp.o
 .PHONY : src/strat.o
 
@@ -243,6 +267,9 @@ help:
 	@echo "... src/marketData.o"
 	@echo "... src/marketData.i"
 	@echo "... src/marketData.s"
+	@echo "... src/momStrat.o"
+	@echo "... src/momStrat.i"
+	@echo "... src/momStrat.s"
 	@echo "... src/strat.o"
 	@echo "... src/strat.i"
 	@echo "... src/strat.s"

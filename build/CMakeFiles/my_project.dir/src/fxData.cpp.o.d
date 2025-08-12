@@ -393,7 +393,4 @@ CMakeFiles/my_project.dir/src/fxData.cpp.o: \
  /home/alarcafil/personal/AlgoTradeV2/src/../include/AlgoTradeV2/timeFunctions.hpp \
  /usr/include/c++/13/chrono \
  /home/alarcafil/personal/AlgoTradeV2/src/../include/AlgoTradeV2/fxData.hpp \
- /usr/include/c++/13/format \
- /home/alarcafil/personal/AlgoTradeV2/src/../include/AlgoTradeV2/marketData.hpp \
- /home/alarcafil/personal/AlgoTradeV2/src/../include/AlgoTradeV2/../httplib/httplib.h \
- /home/alarcafil/personal/AlgoTradeV2/src/../include/AlgoTradeV2/../json/json.hpp
+ /home/alarcafil/personal/AlgoTradeV2/src/../include/AlgoTradeV2/marketData.hpp

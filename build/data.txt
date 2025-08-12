@@ -1,0 +1,1 @@
+DataPoint{time: 2025-08-12 14:50:34, bid: 1.16653, ask:1.16687} DataPoint{time: 2025-08-12 14:50:35, bid: 1.16653, ask:1.16687} DataPoint{time: 2025-08-12 14:50:37, bid: 1.16653, ask:1.16687} 

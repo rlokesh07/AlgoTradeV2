@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/alarcafil/personal/AlgoTradeV2/src/fxData.cpp" "CMakeFiles/my_project.dir/src/fxData.cpp.o" "gcc" "CMakeFiles/my_project.dir/src/fxData.cpp.o.d"
   "/home/alarcafil/personal/AlgoTradeV2/src/main.cpp" "CMakeFiles/my_project.dir/src/main.cpp.o" "gcc" "CMakeFiles/my_project.dir/src/main.cpp.o.d"
   "/home/alarcafil/personal/AlgoTradeV2/src/marketData.cpp" "CMakeFiles/my_project.dir/src/marketData.cpp.o" "gcc" "CMakeFiles/my_project.dir/src/marketData.cpp.o.d"
+  "/home/alarcafil/personal/AlgoTradeV2/src/momStrat.cpp" "CMakeFiles/my_project.dir/src/momStrat.cpp.o" "gcc" "CMakeFiles/my_project.dir/src/momStrat.cpp.o.d"
   "/home/alarcafil/personal/AlgoTradeV2/src/strat.cpp" "CMakeFiles/my_project.dir/src/strat.cpp.o" "gcc" "CMakeFiles/my_project.dir/src/strat.cpp.o.d"
   )
 

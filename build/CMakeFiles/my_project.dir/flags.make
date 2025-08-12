@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
 
-CXX_INCLUDES = -I/home/alarcafil/personal/AlgoTradeV2/include
+CXX_INCLUDES = -I/home/alarcafil/personal/AlgoTradeV2/include -I/home/alarcafil/personal/AlgoTradeV2/tests
 
 CXX_FLAGS = -std=gnu++17
 

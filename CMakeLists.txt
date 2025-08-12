@@ -11,7 +11,7 @@ add_compile_definitions(CPPHTTPLIB_OPENSSL_SUPPORT)
 
 # Add include directory (e.g., where httplib.h and json.hpp live)
 include_directories(include)
-
+include_directories(tests)
 # Find OpenSSL
 find_package(OpenSSL REQUIRED)
 

@@ -1,14 +1,49 @@
-#define CPPHTTPLIB_OPENSSL_SUPPORT
-#include "marketData.hpp"
-#include <string>
+#pragma once
 
+#include <chrono>
+#include <iostream>
+#include <fstream>
+#include <thread>
+#include "fxData.hpp"
+#include <filesystem>
 
-class testData: public marketData{
+inline void generateTestData() {
     
-    public:
-        testData(std::string ticker, std::chrono::milliseconds interval) : marketData(ticker, interval) {};
+    std::chrono::milliseconds interval(1000);
 
-        DataPoint getPrice() override; 
-           
+    fxData EURUSD("EUR_USD", interval);
+    EURUSD.getPrice();
 
-};
+    std::cout << "Writing to: " << std::filesystem::absolute("../tests/data.txt") << std::endl; 
+    int dataSize = 100; //how many data points you want to generate
+
+    for(int i = 0; i < dataSize; i++) {
+        std::cout << "running" << std::endl;
+        try {
+            DataPoint dp = EURUSD.getPrice();
+
+            std::ofstream outFile("../tests/data.txt", std::ios::app);
+            if(!outFile.is_open()){
+                std::cout << "failed to open outFile";
+            }
+            std::cout << dp << " ";
+            outFile << dp << std::endl;
+            outFile.close();
+
+        }
+        catch (const std::exception& e) {
+            std::cerr << "[generateTestData] Exception: " << e.what() << std::endl;
+        }
+        catch (...) {
+            std::cerr << "[generateTestData] Unknown exception caught!" << std::endl;
+        }
+        std::this_thread::sleep_for(interval);
+    }
+    
+
+
+
+    
+    
+}
+
