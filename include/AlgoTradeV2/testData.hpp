@@ -7,7 +7,7 @@
 #include "fxData.hpp"
 #include <filesystem>
 
-inline void generateTestData() {
+inline void generateTestData(int dataSize) {
     
     std::chrono::milliseconds interval(1000);
 
@@ -15,7 +15,6 @@ inline void generateTestData() {
     EURUSD.getPrice();
 
     std::cout << "Writing to: " << std::filesystem::absolute("../tests/data.txt") << std::endl; 
-    int dataSize = 100; //how many data points you want to generate
 
     for(int i = 0; i < dataSize; i++) {
         std::cout << "running" << std::endl;

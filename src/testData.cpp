@@ -5,16 +5,15 @@
 #include <chrono>
 #include "../include/AlgoTradeV2/testData.hpp"
 
-void generateTestData() {
+void generateTestData(int dataPoints) {
     
     std::chrono::milliseconds interval(1000);
 
     fxData EURUSD("EUR_USD", interval);
     EURUSD.getPrice();
     
-    int dataSize = 100; //how many data points you want to generate
 
-    for(int i = 0; i < dataSize; i++) {
+    for(int i = 0; i < dataPoints; i++) {
         std::cout << "running" << std::endl;
         try {
             DataPoint dp = EURUSD.getPrice();
