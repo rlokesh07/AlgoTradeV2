@@ -129,6 +129,30 @@ my_project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/build
 .PHONY : my_project/fast
 
+src/fundementalData.o: src/fundementalData.cpp.o
+.PHONY : src/fundementalData.o
+
+# target to build an object file
+src/fundementalData.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/fundementalData.cpp.o
+.PHONY : src/fundementalData.cpp.o
+
+src/fundementalData.i: src/fundementalData.cpp.i
+.PHONY : src/fundementalData.i
+
+# target to preprocess a source file
+src/fundementalData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/fundementalData.cpp.i
+.PHONY : src/fundementalData.cpp.i
+
+src/fundementalData.s: src/fundementalData.cpp.s
+.PHONY : src/fundementalData.s
+
+# target to generate assembly for a file
+src/fundementalData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/fundementalData.cpp.s
+.PHONY : src/fundementalData.cpp.s
+
 src/fxData.o: src/fxData.cpp.o
 .PHONY : src/fxData.o
 
@@ -225,6 +249,54 @@ src/momStrat.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/momStrat.cpp.s
 .PHONY : src/momStrat.cpp.s
 
+src/pnbStrat.o: src/pnbStrat.cpp.o
+.PHONY : src/pnbStrat.o
+
+# target to build an object file
+src/pnbStrat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/pnbStrat.cpp.o
+.PHONY : src/pnbStrat.cpp.o
+
+src/pnbStrat.i: src/pnbStrat.cpp.i
+.PHONY : src/pnbStrat.i
+
+# target to preprocess a source file
+src/pnbStrat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/pnbStrat.cpp.i
+.PHONY : src/pnbStrat.cpp.i
+
+src/pnbStrat.s: src/pnbStrat.cpp.s
+.PHONY : src/pnbStrat.s
+
+# target to generate assembly for a file
+src/pnbStrat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/pnbStrat.cpp.s
+.PHONY : src/pnbStrat.cpp.s
+
+src/pneStrat.o: src/pneStrat.cpp.o
+.PHONY : src/pneStrat.o
+
+# target to build an object file
+src/pneStrat.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/pneStrat.cpp.o
+.PHONY : src/pneStrat.cpp.o
+
+src/pneStrat.i: src/pneStrat.cpp.i
+.PHONY : src/pneStrat.i
+
+# target to preprocess a source file
+src/pneStrat.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/pneStrat.cpp.i
+.PHONY : src/pneStrat.cpp.i
+
+src/pneStrat.s: src/pneStrat.cpp.s
+.PHONY : src/pneStrat.s
+
+# target to generate assembly for a file
+src/pneStrat.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/my_project.dir/build.make CMakeFiles/my_project.dir/src/pneStrat.cpp.s
+.PHONY : src/pneStrat.cpp.s
+
 src/strat.o: src/strat.cpp.o
 .PHONY : src/strat.o
 
@@ -258,6 +330,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... my_project"
+	@echo "... src/fundementalData.o"
+	@echo "... src/fundementalData.i"
+	@echo "... src/fundementalData.s"
 	@echo "... src/fxData.o"
 	@echo "... src/fxData.i"
 	@echo "... src/fxData.s"
@@ -270,6 +345,12 @@ help:
 	@echo "... src/momStrat.o"
 	@echo "... src/momStrat.i"
 	@echo "... src/momStrat.s"
+	@echo "... src/pnbStrat.o"
+	@echo "... src/pnbStrat.i"
+	@echo "... src/pnbStrat.s"
+	@echo "... src/pneStrat.o"
+	@echo "... src/pneStrat.i"
+	@echo "... src/pneStrat.s"
 	@echo "... src/strat.o"
 	@echo "... src/strat.i"
 	@echo "... src/strat.s"

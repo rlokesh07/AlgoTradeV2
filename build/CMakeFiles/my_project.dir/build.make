@@ -69,10 +69,24 @@ include CMakeFiles/my_project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/my_project.dir/flags.make
 
+CMakeFiles/my_project.dir/src/fundementalData.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/src/fundementalData.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/fundementalData.cpp
+CMakeFiles/my_project.dir/src/fundementalData.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_project.dir/src/fundementalData.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/fundementalData.cpp.o -MF CMakeFiles/my_project.dir/src/fundementalData.cpp.o.d -o CMakeFiles/my_project.dir/src/fundementalData.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/fundementalData.cpp
+
+CMakeFiles/my_project.dir/src/fundementalData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/src/fundementalData.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alarcafil/personal/AlgoTradeV2/src/fundementalData.cpp > CMakeFiles/my_project.dir/src/fundementalData.cpp.i
+
+CMakeFiles/my_project.dir/src/fundementalData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/src/fundementalData.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alarcafil/personal/AlgoTradeV2/src/fundementalData.cpp -o CMakeFiles/my_project.dir/src/fundementalData.cpp.s
+
 CMakeFiles/my_project.dir/src/fxData.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/src/fxData.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/fxData.cpp
 CMakeFiles/my_project.dir/src/fxData.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/my_project.dir/src/fxData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_project.dir/src/fxData.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/fxData.cpp.o -MF CMakeFiles/my_project.dir/src/fxData.cpp.o.d -o CMakeFiles/my_project.dir/src/fxData.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/fxData.cpp
 
 CMakeFiles/my_project.dir/src/fxData.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/my_project.dir/src/fxData.cpp.s: cmake_force
 CMakeFiles/my_project.dir/src/main.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/src/main.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/main.cpp
 CMakeFiles/my_project.dir/src/main.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/my_project.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_project.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/main.cpp.o -MF CMakeFiles/my_project.dir/src/main.cpp.o.d -o CMakeFiles/my_project.dir/src/main.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/main.cpp
 
 CMakeFiles/my_project.dir/src/main.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/my_project.dir/src/main.cpp.s: cmake_force
 CMakeFiles/my_project.dir/src/marketData.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/src/marketData.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/marketData.cpp
 CMakeFiles/my_project.dir/src/marketData.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/my_project.dir/src/marketData.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_project.dir/src/marketData.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/marketData.cpp.o -MF CMakeFiles/my_project.dir/src/marketData.cpp.o.d -o CMakeFiles/my_project.dir/src/marketData.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/marketData.cpp
 
 CMakeFiles/my_project.dir/src/marketData.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/my_project.dir/src/marketData.cpp.s: cmake_force
 CMakeFiles/my_project.dir/src/momStrat.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/src/momStrat.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/momStrat.cpp
 CMakeFiles/my_project.dir/src/momStrat.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/my_project.dir/src/momStrat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_project.dir/src/momStrat.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/momStrat.cpp.o -MF CMakeFiles/my_project.dir/src/momStrat.cpp.o.d -o CMakeFiles/my_project.dir/src/momStrat.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/momStrat.cpp
 
 CMakeFiles/my_project.dir/src/momStrat.cpp.i: cmake_force
@@ -125,10 +139,38 @@ CMakeFiles/my_project.dir/src/momStrat.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/src/momStrat.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alarcafil/personal/AlgoTradeV2/src/momStrat.cpp -o CMakeFiles/my_project.dir/src/momStrat.cpp.s
 
+CMakeFiles/my_project.dir/src/pnbStrat.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/src/pnbStrat.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/pnbStrat.cpp
+CMakeFiles/my_project.dir/src/pnbStrat.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/my_project.dir/src/pnbStrat.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/pnbStrat.cpp.o -MF CMakeFiles/my_project.dir/src/pnbStrat.cpp.o.d -o CMakeFiles/my_project.dir/src/pnbStrat.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/pnbStrat.cpp
+
+CMakeFiles/my_project.dir/src/pnbStrat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/src/pnbStrat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alarcafil/personal/AlgoTradeV2/src/pnbStrat.cpp > CMakeFiles/my_project.dir/src/pnbStrat.cpp.i
+
+CMakeFiles/my_project.dir/src/pnbStrat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/src/pnbStrat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alarcafil/personal/AlgoTradeV2/src/pnbStrat.cpp -o CMakeFiles/my_project.dir/src/pnbStrat.cpp.s
+
+CMakeFiles/my_project.dir/src/pneStrat.cpp.o: CMakeFiles/my_project.dir/flags.make
+CMakeFiles/my_project.dir/src/pneStrat.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/pneStrat.cpp
+CMakeFiles/my_project.dir/src/pneStrat.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/my_project.dir/src/pneStrat.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/pneStrat.cpp.o -MF CMakeFiles/my_project.dir/src/pneStrat.cpp.o.d -o CMakeFiles/my_project.dir/src/pneStrat.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/pneStrat.cpp
+
+CMakeFiles/my_project.dir/src/pneStrat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/my_project.dir/src/pneStrat.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alarcafil/personal/AlgoTradeV2/src/pneStrat.cpp > CMakeFiles/my_project.dir/src/pneStrat.cpp.i
+
+CMakeFiles/my_project.dir/src/pneStrat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/my_project.dir/src/pneStrat.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alarcafil/personal/AlgoTradeV2/src/pneStrat.cpp -o CMakeFiles/my_project.dir/src/pneStrat.cpp.s
+
 CMakeFiles/my_project.dir/src/strat.cpp.o: CMakeFiles/my_project.dir/flags.make
 CMakeFiles/my_project.dir/src/strat.cpp.o: /home/alarcafil/personal/AlgoTradeV2/src/strat.cpp
 CMakeFiles/my_project.dir/src/strat.cpp.o: CMakeFiles/my_project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_project.dir/src/strat.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/my_project.dir/src/strat.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_project.dir/src/strat.cpp.o -MF CMakeFiles/my_project.dir/src/strat.cpp.o.d -o CMakeFiles/my_project.dir/src/strat.cpp.o -c /home/alarcafil/personal/AlgoTradeV2/src/strat.cpp
 
 CMakeFiles/my_project.dir/src/strat.cpp.i: cmake_force
@@ -141,25 +183,31 @@ CMakeFiles/my_project.dir/src/strat.cpp.s: cmake_force
 
 # Object files for target my_project
 my_project_OBJECTS = \
+"CMakeFiles/my_project.dir/src/fundementalData.cpp.o" \
 "CMakeFiles/my_project.dir/src/fxData.cpp.o" \
 "CMakeFiles/my_project.dir/src/main.cpp.o" \
 "CMakeFiles/my_project.dir/src/marketData.cpp.o" \
 "CMakeFiles/my_project.dir/src/momStrat.cpp.o" \
+"CMakeFiles/my_project.dir/src/pnbStrat.cpp.o" \
+"CMakeFiles/my_project.dir/src/pneStrat.cpp.o" \
 "CMakeFiles/my_project.dir/src/strat.cpp.o"
 
 # External object files for target my_project
 my_project_EXTERNAL_OBJECTS =
 
+my_project: CMakeFiles/my_project.dir/src/fundementalData.cpp.o
 my_project: CMakeFiles/my_project.dir/src/fxData.cpp.o
 my_project: CMakeFiles/my_project.dir/src/main.cpp.o
 my_project: CMakeFiles/my_project.dir/src/marketData.cpp.o
 my_project: CMakeFiles/my_project.dir/src/momStrat.cpp.o
+my_project: CMakeFiles/my_project.dir/src/pnbStrat.cpp.o
+my_project: CMakeFiles/my_project.dir/src/pneStrat.cpp.o
 my_project: CMakeFiles/my_project.dir/src/strat.cpp.o
 my_project: CMakeFiles/my_project.dir/build.make
 my_project: /usr/lib/x86_64-linux-gnu/libssl.so
 my_project: /usr/lib/x86_64-linux-gnu/libcrypto.so
 my_project: CMakeFiles/my_project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable my_project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/alarcafil/personal/AlgoTradeV2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable my_project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

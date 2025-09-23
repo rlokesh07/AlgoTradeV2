@@ -16,6 +16,12 @@ struct DataPoint {
     
 };
 
+struct FundamentalDataPoint : DataPoint{
+    double assets;
+    double liabilities;
+    double marketCap;
+};
+
     
 class marketData { 
 

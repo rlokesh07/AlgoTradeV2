@@ -1,7 +1,10 @@
-#include "../include/AlgoTradeV2/testData.hpp"
+#include "../include/AlgoTradeV2/fundementalData.hpp"
 
 int main() {
-    generateTestData(1000);
+
+    
+    fundementalData myData("AAPL", std::chrono::milliseconds(20));
+    myData.getPrice();
     return 0;
 }
 

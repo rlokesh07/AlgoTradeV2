@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/my_project.dir/src/fundementalData.cpp.o"
+  "CMakeFiles/my_project.dir/src/fundementalData.cpp.o.d"
   "CMakeFiles/my_project.dir/src/fxData.cpp.o"
   "CMakeFiles/my_project.dir/src/fxData.cpp.o.d"
   "CMakeFiles/my_project.dir/src/main.cpp.o"
@@ -7,6 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_project.dir/src/marketData.cpp.o.d"
   "CMakeFiles/my_project.dir/src/momStrat.cpp.o"
   "CMakeFiles/my_project.dir/src/momStrat.cpp.o.d"
+  "CMakeFiles/my_project.dir/src/pnbStrat.cpp.o"
+  "CMakeFiles/my_project.dir/src/pnbStrat.cpp.o.d"
+  "CMakeFiles/my_project.dir/src/pneStrat.cpp.o"
+  "CMakeFiles/my_project.dir/src/pneStrat.cpp.o.d"
   "CMakeFiles/my_project.dir/src/strat.cpp.o"
   "CMakeFiles/my_project.dir/src/strat.cpp.o.d"
   "my_project"
