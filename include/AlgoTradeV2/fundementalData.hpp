@@ -10,5 +10,7 @@ class fundementalData: public marketData{
 
         DataPoint getPrice() override; 
            
-
+        std::deque<FundamentalDataPoint> dataBuffer;
+        std::deque<FundamentalDataPoint>::iterator begin();
+        std::deque<FundamentalDataPoint>::iterator end();
 };

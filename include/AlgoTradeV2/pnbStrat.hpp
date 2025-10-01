@@ -1,17 +1,18 @@
 #define CPPHTTPLIB_OPENSSL_SUPPORT
 #include <string>
-#include "strat.hpp"
+#include "fundamentalStrat.hpp"
 
 
-class pnbStrat: public strat{
-
+class pnbStrat: public fundamentalStrat{
     
     public:
 
-        pnbStrat(std::string ticker, double costBasis, marketData& data) : strat(ticker, costBasis, data) {}; 
+        pnbStrat(std::string ticker, double costBasis, double threshold, fundementalData& data) : fundamentalStrat(ticker, costBasis, data), threshold(threshold) {}; 
         
         int getPosition() override;
 
     private:
+
+        double threshold;
 
 };

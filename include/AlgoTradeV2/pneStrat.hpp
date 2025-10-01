@@ -1,9 +1,9 @@
 #define CPPHTTPLIB_OPENSSL_SUPPORT
 #include <string>
-#include "strat.hpp"
+#include "fundamentalStrat.hpp"
 
 
-class pneStrat: public strat{
+class pneStrat: public fundamentalStrat{
     
     public:
 

@@ -54,12 +54,7 @@ DataPoint fundementalData::getPrice(){
             dp.time = currentTime();
             dp.marketCap = marketCap;
 
-            // Print results
-            std::cout << "Assets: " << assets << std::endl;
-            std::cout << "Liabilities: " << liabilities << std::endl;
-            std::cout << "Filing Date: " << filing_date << std::endl;
-            std::cout << "Market Cap: " << marketCap << std::endl;
-        } catch (const std::exception& e){
+       } catch (const std::exception& e){
             std::cerr << e.what() << std::endl;
         }
 
@@ -69,3 +64,14 @@ DataPoint fundementalData::getPrice(){
 
 
 }
+
+std::deque<FundamentalDataPoint>::iterator fundementalData::begin(){ 
+    return fundementalData::dataBuffer.begin();
+}
+
+
+std::deque<FundamentalDataPoint>::iterator fundementalData::end(){ 
+    return fundementalData::dataBuffer.end();
+}
+
+
